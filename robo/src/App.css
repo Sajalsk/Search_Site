@@ -1,0 +1,45 @@
+.cards{
+  
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ margin-top: 100px;
+ margin-left: 20px;
+ 
+ 
+
+}
+
+.items{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.items img{
+  height: 250px;
+  width: 250px;
+}
+
+
+
+.items:hover {
+  box-shadow: 0 8px 16px 0 gray;;
+  cursor: pointer;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+
+
+h1{
+  font-size: large;
+}
+
+h2{
+  font-size: large;
+}
+
+
+
+

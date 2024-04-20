@@ -1,0 +1,128 @@
+import React from "react";
+import { Users } from "./users";
+
+
+import image from "./Images/Sajal.jpeg";
+import Virat from "./Images/Virat.webp";
+import Sachin from "./Images/Sachin.webp";
+import Ganguly from "./Images/Ganguly.webp";
+import Laxman from "./Images/Laxman.jpg";
+import Dravid from "./Images/Dravid.jpg";
+import Chahal from "./Images/Chahal.webp";
+import Rohit from "./Images/Rohit.webp";
+import Bumrah from "./Images/Bumrah.jpg";
+import Raina from "./Images/Raina.jpg";
+import Ashwin from "./Images/Ashwin.jpg";
+import Yuvraj from "./Images/Yuvraj.webp";
+import Sehwag from "./Images/Sehwag.jpg";
+import Gambhir from "./Images/Gambhir.webp";
+import Jadeja from "./Images/Jadeja.jpg";
+
+import "./App.css";
+
+const Cards = () => {
+  return (
+    <>
+      <div className="cards">
+      <ul>
+            {Users.map((Users)=>(
+            <li>{Users.name}</li>
+            ))}
+            
+          </ul>
+          
+        <div className="items">
+        <img src={image} alt="Sajal" height="250" width="250" />
+          <h1>Sajal khandelwal</h1>
+          <h2>PBH</h2>
+        </div>
+
+        <div className="items">
+          <img src={Virat} alt="Sajal" height="250" width="250" />
+          <h1>Virat Kohli</h1>
+          <h2>RCB</h2>
+        </div>
+
+        <div className="items">
+          <img src={Sachin} alt="Sajal" height="250" width="250" />
+          <h1>Sachin Tendulkar</h1>
+          <h2>MI</h2>
+        </div>
+
+        <div className="items">
+          <img src={Sehwag} alt="Sajal" height="250" width="250" />
+          <h1>Virendra Sehwag</h1>
+          <h2>DD</h2>
+        </div>
+
+        <div className="items">
+          <img src={Gambhir} alt="Sajal" height="250" width="250" />
+          <h1>Gautam Gambhir</h1>
+          <h2>KKR</h2>
+        </div>
+
+        <div className="items">
+          <img src={Ganguly} alt="Sajal" height="250" width="250" />
+          <h1>Saurav Ganguly</h1>
+          <h2>KKR</h2>
+        </div>
+
+        <div className="items">
+          <img src={Ashwin} alt="Sajal" height="250" width="250" />
+          <h1>Ravi Ashwin</h1>
+          <h2>SRH</h2>
+        </div>
+
+        <div className="items">
+          <img src={Dravid} alt="Sajal" height="250" width="250" />
+          <h1>Rahul Dravid</h1>
+          <h2>RR</h2>
+        </div>
+
+        <div className="items">
+          <img src={Rohit} alt="Sajal" height="250" width="250" />
+          <h1>Rohit Sharma</h1>
+          <h2>MI</h2>
+        </div>
+
+        <div className="items">
+          <img src={Chahal} alt="Sajal" height="250" width="250" />
+          <h1>Yuvi Chahal</h1>
+          <h2>RCB</h2>
+        </div>
+
+        <div className="items">
+          <img src={Raina} alt="Sajal" height="250" width="250" />
+          <h1>Suresh Raina</h1>
+          <h2>CSK</h2>
+        </div>
+
+        <div className="items">
+          <img src={Yuvraj} alt="Sajal" height="250" width="250" />
+          <h1>Yuvraj Singh</h1>
+          <h2>PBKS</h2>
+        </div>
+
+        <div className="items">
+          <img src={Jadeja} alt="Sajal" height="250" width="250" />
+          <h1>Ravinda Jadeja</h1>
+          <h2>CSK</h2>
+        </div>
+
+        <div className="items">
+          <img src={Laxman} alt="Sajal" height="250" width="250" />
+          <h1>VVS Laxman</h1>
+          <h2>CSK</h2>
+        </div>
+
+        <div className="items">
+          <img src={Bumrah} alt="Sajal" height="250" width="250" />
+          <h1>Jasprit Bumrah</h1>
+          <h2>MI</h2>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Cards;
